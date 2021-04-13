@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap");
+/*********mixins**********/
+/*********basic styles**********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/*********topBar**********/
+.topBar {
+  background: #2c3e50;
+  padding: 5px 0;
+}
+.topBar .logo {
+  text-transform: uppercase;
+  color: #f1c40f;
+  margin-left: 10%;
+  font-size: 1.5rem;
+}
+.topBar .logo:hover {
+  color: #e9ecef;
+}
+
+/*********navBar**********/
+.navBar {
+  background: #e9ecef;
+}
+.navBar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.navBar ul li {
+  margin-left: 20px;
+  padding: 5px 0;
+  transition: 0.3s ease;
+}
+.navBar ul li a {
+  color: #4a9375;
+}
+.navBar ul li a:hover {
+  border-bottom: 1px solid #4a9375;
+}
+
+/*********header**********/
+header {
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+header .headText {
+  background: rgba(39, 174, 96, 0.7);
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+}
+header .headText h1 {
+  text-shadow: 0 0 2px #2c3e50;
+}
+header .headText button {
+  border: none;
+  padding: 15px 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  background: #f1c40f;
+  transition: 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+header .headText button:hover {
+  color: #e9ecef;
+}
+
+/*********oNama**********/
+.oNama {
+  background-image: linear-gradient(rgba(74, 147, 117, 0.8), rgba(74, 147, 117, 0.8)), url(../img/onama.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 60vh;
+  text-align: center;
+  color: #fff;
+}
+
+/*********destinacije**********/
+.destinacije {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.destinacije article {
+  flex: 0 0 25%;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to right, #f1c40f, #e9ecef);
+}
+.destinacije article img {
+  width: 100%;
+}
+.destinacije article div {
+  padding: 20px;
+}
+.destinacije article:nth-child(odd) div {
+  background: #2c3e50;
+}
+.destinacije article:nth-child(even) div {
+  background: #27ae60;
+}
+
+/*********benefiti**********/
+.benefiti article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.benefiti article div {
+  flex: 0 0 50%;
+  text-align: center;
+}
+.benefiti article div img {
+  width: 100%;
+  display: block;
+}
+.benefiti article .benefitText {
+  padding: 50px 40px;
+}
+.benefiti article .benefitText p {
+  text-align: justify;
+}
+.benefiti article:nth-child(2) .benefitText {
+  order: 2;
+}
+.benefiti article:nth-child(2) .benefitImg {
+  order: 1;
+}
+
+/*********footer**********/
+footer {
+  background-image: linear-gradient(rgba(241, 196, 15, 0.7), rgba(241, 196, 15, 0.7)), url(../img/footer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+footer h2 {
+  font-size: 2rem;
+}
+footer p {
+  padding: 30px 0;
+}
+footer input {
+  padding: 15px;
+  margin-right: 20px;
+  outline: none;
+}
+footer input[type=submit] {
+  border: none;
+  padding: 15px 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  background: #f1c40f;
+  transition: 0.3s ease;
+  cursor: pointer;
+  outline: none;
+  background: #2c3e50;
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+footer input[type=submit]:hover {
+  color: #e9ecef;
+}
+footer input[type=submit]:hover {
+  color: #f1c40f;
+}
+
+/*# sourceMappingURL=style.css.map */
