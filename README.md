@@ -1,1 +1,1 @@
-# Rental
+https://dalibordespic.github.io/Rental/
